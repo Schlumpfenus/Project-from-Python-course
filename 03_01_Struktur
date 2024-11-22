@@ -1,0 +1,49 @@
+# Anteil der verbrannten Fläche an der gesamten Landfläche pro Region und Jahr (als Barplot(s)):
+
+# Parameter:
+
+- Quelle 'share-of-the-total-land-area-burnt-by-wildfires-each-year.csv'
+- Spalten:  'Entity' (Land, Kontinent, Region, Ländergruppe),
+            'Code' (Ländercode), 'Year' (beobachtetes Jahr),
+            'Annual share of the total land area burnt by wildfires'
+            (Anteil der verbrannten an der gesamten Landfläche in Prozent)
+- Einteilung der Welt nach Regionen, Elimination unnötiger Einträge aus der Länderliste
+- Auswahl eines, mehrere Länder
+
+# Funktionalitäten:
+
+- Suchfeld und Dropdown
+- Mehrere Länder/ Regionen durch Hinzufügen von Auswahlzeilen
+(- Regressionswert für das Gesamtjahr 2024 als Markieroption)
+
+# Vorgehensweise (To-Do):
+
+Definition der Variablen:                                                   # done
+            "noneed_regions" --> nicht verwendete Regionen in der Liste     # done
+            "countries_regions" --> Länder/ Regionen der Welt               # done
+
+Aufbau Programm:
+        - Model
+            - Daten einlesen                                                # Done
+            - Bei Datei öffnen Fehlerbehandlung                             # Done
+            - Liste Länder zur Verfügung stellen                            # Done
+            - Liste Regionen zur Verfügung stellen                          # Done
+            - Überprüfung Docstrings/ Kommentierungen                       # Done
+        - View
+            - ein/ mehrere Länder/ Regionen                                 # Done
+            - Suchfeld einfügen                                             # Done
+            - Power-Point umsetzen                                          # Done
+            - Überprüfung Docstrings/ Kommentierungen                       # Done
+        - Controller
+            - Initiierung von Model                                         # Done
+            - Initiierung von View                                          # Done
+            - Start des Programmfensters                                    # Done
+
+# Präsentation und Screenshots:
+
+        - Kurze Beschreibung ourworldindata/wildfires,
+                - was ist ein Wildfire?
+                - Besonderheiten in den Datensätzen (Screenshot)
+        - Kurze Definition von Model-View-Controller
+        - Interaktion der py.Dateien untereinander (Screenshot?)
+        - Vorführen des Programms
